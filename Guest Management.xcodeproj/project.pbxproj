@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F48B8B12CE4A57E0062C8EC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F48B8B02CE4A57E0062C8EC /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9F48B87E2CE487650062C8EC /* Guest Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guest Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F48B8B12CE4A57E0062C8EC /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "Guest Management";
 			packageProductDependencies = (
+				9F48B8B02CE4A57E0062C8EC /* RealmSwift */,
 			);
 			productName = "Guest Management";
 			productReference = 9F48B87E2CE487650062C8EC /* Guest Management.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 9F48B8752CE487650062C8EC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9F48B8AF2CE4A57E0062C8EC /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9F48B87F2CE487650062C8EC /* Products */;
 			projectDirPath = "";
@@ -322,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F48B8AF2CE4A57E0062C8EC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F48B8B02CE4A57E0062C8EC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F48B8AF2CE4A57E0062C8EC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F48B8762CE487650062C8EC /* Project object */;
 }
